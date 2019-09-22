@@ -19,7 +19,7 @@ function isUserLogined($cookie_id) {
 
 function getUserID($username, $password) {
     $db = new SQLite3('db.sqlite');
-    $id = $db->querySingle("SELECT ID from Users where Login='".$username."' and Login='".$password."'");
+    $id = $db->querySingle("SELECT ID from Users where Login='".$username."' and Pass='".$password."'");
     return $id;
     //OMG sqli here
 }
