@@ -23,7 +23,7 @@ if ($handle = opendir('uploads/'.$username.'/'))
 {
     while (false !== ($file = readdir($handle))) {
         if ($file != "." && $file != "..") {
-            $thelist .= '<li><a href="'.$username.'/'.$file.'">'.$file.'</a></li>';
+            $thelist .= '<li><a href=uploads/'.$username.'/'.$file.'>'.$file.'</a></li>';
 } }
  closedir($handle);
 }
